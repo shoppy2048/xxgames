@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXGames - Online Game Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-blue-600 text-white shadow-md">
+        <!-- 导航内容... -->
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6" id="hotGamesTitle">Hot Games</h2>
+        <section class="mb-12">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="hotGamesContainer">
+                <!-- 热门游戏将通过 JavaScript 动态加载 -->
+                <div class="bg-gray-200 animate-pulse rounded-lg h-64"></div>
+                <div class="bg-gray-200 animate-pulse rounded-lg h-64"></div>
+                <div class="bg-gray-200 animate-pulse rounded-lg h-64"></div>
+                <div class="bg-gray-200 animate-pulse rounded-lg h-64"></div>
+                <div class="bg-gray-200 animate-pulse rounded-lg h-64"></div>
+            </div>
+        </section>
+        
+        <!-- 游戏分类 -->
+        <div id="categoriesContainer">
+            <!-- 分类将通过 JavaScript 动态加载 -->
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <!-- 页脚内容... -->
+    </footer>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html> 

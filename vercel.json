@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "target/*.jar",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/target/xxgames-space-1.0.0.jar"
+    }
+  ],
+  "env": {
+    "SUPABASE_HOST": "@supabase_host",
+    "SUPABASE_PORT": "@supabase_port",
+    "SUPABASE_DB": "@supabase_db",
+    "SUPABASE_USER": "@supabase_user",
+    "SUPABASE_PASSWORD": "@supabase_password"
+  }
+} 
